@@ -1,0 +1,14 @@
+@import "./variables";
+
+/** Header **/
+$headerBg: $secondary-color;
+$headerLogoColor: $primary-color;
+
+/*** Main section **/
+$main-text-color: #222;
+$link-color: lighten($main-text-color, 0.5);
+$body-bg: white;
+
+/** Buttons **/
+
+/** Inputs **/

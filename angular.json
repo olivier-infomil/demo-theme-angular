@@ -30,6 +30,10 @@
               "src/assets"
             ],
             "styles": [
+              "node_modules/primeicons/primeicons.css",
+              "node_modules/primeflex/primeflex.css",
+              "node_modules/primeng/resources/primeng.css",
+              "node_modules/primeng/resources/themes/bootstrap4-light-blue/theme.css",
               "src/styles.scss"
             ],
             "scripts": []
@@ -39,8 +43,8 @@
               "budgets": [
                 {
                   "type": "initial",
-                  "maximumWarning": "500kb",
-                  "maximumError": "1mb"
+                  "maximumWarning": "1mb",
+                  "maximumError": "1.5mb"
                 },
                 {
                   "type": "anyComponentStyle",
@@ -93,6 +97,10 @@
               "src/assets"
             ],
             "styles": [
+              "node_modules/primeicons/primeicons.css",
+              "node_modules/primeflex/primeflex.css",
+              "node_modules/primeng/resources/primeng.css",
+              "node_modules/primeng/resources/themes/bootstrap4-light-blue/theme.css",
               "src/styles.scss"
             ],
             "scripts": []

@@ -1,0 +1,80 @@
+/************* Theme Mixins *****************/
+/* Include only changes that relates to UI color changes / Appearance changes for specific themes e.g background, color, shadow colors, text colors ect.. */
+
+// Body mixin
+@mixin body($body-bg, $main-text-color) {
+  body {
+    background: $body-bg;
+    color: $main-text-color;
+  }
+}
+
+// Primeng Button mixin
+@mixin button($primary-color, $secondary-color) {
+
+  // for buttons that are not secondary nor button link: add :not(your-button-class) if you need to prevent other specific types of buttons to get those changes.
+  .p-button:not(.p-button-link):not(.p-button-secondary) {
+    background: $primary-color;
+    border-color: $primary-color;
+
+    &:enabled:hover {
+      background: $secondary-color;
+      border-color: $secondary-color;
+
+      &.p-button-link {
+        color: $secondary-color;
+      }
+    }
+
+    &:enabled:focus {
+      box-shadow: 0 0 0.5rem rgba($primary-color, 0.2);
+    }
+  }
+
+  // For Primeng link buttons
+  .p-button.p-button-link {
+    color: $primary-color;
+
+    &:enabled:hover {
+      color: $secondary-color;
+    }
+  }
+}
+
+// Primeng Input Text mixin
+@mixin input($primary-color, $secondary-color) {
+  .p-inputtext {
+
+    &::placeholder {
+      color: lighten($primary-color, 30);
+    }
+
+    &:enabled:focus {
+      border-color: $primary-color;
+      box-shadow: 0 0 0.5rem rgba($primary-color, 0.2);
+    }
+  }
+}
+
+// Login component mixin
+@mixin loginModal($overlayBackground, $loginBackground, $shadowColor){
+  .login {
+    background: $loginBackground;
+    box-shadow: 0 0 10px rgba($shadowColor, 0.5);
+  }
+
+  .loginContainer {
+    background: rgba($overlayBackground, 0.5);
+  }
+}
+
+// Header component mixin
+@mixin header($logoColor, $headerBackground){
+  .header {
+    background: $headerBackground;
+
+    .logo {
+      color: $logoColor;
+    }
+  }
+}

@@ -1,1 +1,21 @@
-/* You can add global styles to this file, and also import other style files */
+* {
+  box-sizing: border-box;
+}
+
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+  position: relative;
+}
+
+body {
+  font-family: 'Lato', sans-serif;
+}
+
+// Import of everything that needs updates/modification to theme according to theme colors defined.
+@import "./scss/theme-mixin";
+@import "./scss/theme";

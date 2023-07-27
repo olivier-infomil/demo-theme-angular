@@ -1,0 +1,18 @@
+// include mixins that are to be used as default in the current theme if needed.
+@import "./theme-light";
+@include body($body-bg,$main-text-color);
+@include button($primary-color, $secondary-color);
+@include input($primary-color, $secondary-color);
+@include loginModal(black, $body-bg, $primary-color);
+@include header($primary-color, white);
+
+
+// include mixins that are to be used in the current theme if needed.
+.theme-dark {
+  @import "./theme-dark";
+  @include body($body-bg,$main-text-color);
+  @include button($primary-color, $secondary-color);
+  @include input($primary-color, $secondary-color);
+  @include loginModal(white, darken($primary-color, 30), $primary-color);
+  @include header($secondary-color, lighten($primary-color, 20));
+}

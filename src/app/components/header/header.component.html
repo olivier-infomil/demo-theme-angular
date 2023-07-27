@@ -1,0 +1,7 @@
+<header>
+  <p class="logo">// Mysite.com</p>
+  <p-button icon="pi pi-user" styleClass="p-button-rounded p-button-secondary mr-2" (click)="fnShowLogin()"></p-button>
+  <p-button icon="pi pi-palette" label="Switch Theme" styleClass="p-button-help p-button-rounded" (click)="switchTheme()"></p-button>
+</header>
+
+<app-login *ngIf="showLogin" (EvhideLogin)="fnShowLogin()"></app-login>

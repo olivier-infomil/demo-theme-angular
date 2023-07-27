@@ -1,0 +1,19 @@
+@import "/src/scss/variables";
+
+header {
+  height: 4rem;
+  padding: 1rem 0;
+  margin: 0 auto;
+  width: 90%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+
+  p.logo {
+    margin: 0 auto 0 0;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 1.5rem;
+  }
+}

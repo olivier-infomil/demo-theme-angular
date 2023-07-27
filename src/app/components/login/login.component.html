@@ -1,0 +1,20 @@
+
+
+<div class="loginContainer flex align-items-center justify-content-center">
+
+    <div class="login">
+      <h2><i class="pi pi-user"></i>Login</h2>
+      <p>Please provide your credentials</p>
+      <div class="inputs">
+        <input type="text" pInputText [(ngModel)]="loginVal" placeholder="youremail@infomil.mu" />
+        <p-password [(ngModel)]="passVal" [feedback]="false" placeholder="Your Password" [toggleMask]="true"></p-password>
+      </div>
+
+      <div class="buttons">
+        <p-button label="Forgot password?" styleClass="p-button-link forgotPassword pl-0"></p-button>
+        <p-button label="Submit" icon="pi pi-check" pRipple styleClass="p-button-rounded" (click)="submit(loginVal, passVal)"></p-button>
+      </div>
+    </div>
+
+  <div class="overlay" (click)="hideLogin()"></div>
+</div>

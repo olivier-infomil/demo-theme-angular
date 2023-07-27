@@ -1,0 +1,57 @@
+
+.loginContainer {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  width: 100%;
+  height: 100%;
+
+  .overlay {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    right: 0;
+  }
+}
+
+.login {
+  z-index: 1000;
+  min-width: 320px;
+  min-height: 300px;
+  width: 30vw;
+  max-width: 400px;
+  height: auto;
+  padding: 1rem 1.5rem;
+  border-radius: 0.25rem;
+
+  h2 {
+    display: flex;
+    align-items: center;
+
+    i {
+      margin: 0 0.25rem 0 0;
+      font-size: 1.5rem;
+    }
+  }
+
+  .inputs {
+    margin: 1rem 0;
+  }
+
+  input,
+  .p-password {
+    width: 100%;
+    margin: 0.25rem 0;
+  }
+
+  .buttons {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 1rem;
+  }
+
+}
